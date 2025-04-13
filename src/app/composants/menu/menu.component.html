@@ -1,0 +1,28 @@
+<div class="accordion" id="accordionExample">
+        <!--<div class="accordion-item" *ngFor="let menu of menuProperties">
+            <h2 class="accordion-header" id="{{menu.id}}">
+               
+                    <button class="btn btn-link btn-block text-left" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        {{menu.titre}}
+                    </button>
+                
+            </h2>  
+
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby=""  data-bs-parent="#accordionExample" *ngFor="let sousMenu of menu.sousMenu">
+                {{sousMenu.titre}}
+            </div>
+        </div>-->
+
+        <div class="accordion-item" *ngFor="let menu of menuProperties">
+            <h2 class="accordion-header" id="{{menu.id}}">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                {{menu.titre}}
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample" *ngFor="let sousMenu of menu.sousMenu">
+              <div class="accordion-body">
+                {{sousMenu.titre}}
+            </div>
+          </div>
+</div>      
+        
