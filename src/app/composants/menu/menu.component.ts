@@ -46,7 +46,7 @@ export class MenuComponent implements OnInit {
           id: '22',
           titre: 'Mouvements du stock',
           icon: 'fa fa-archive',
-          url: ''
+          url: 'mvtstk'
         }
       ]
     },
@@ -60,7 +60,7 @@ export class MenuComponent implements OnInit {
           id: '31',
           titre: 'Clients',
           icon: 'fa fa-users',
-          url: ''
+          url: 'clients'
         },
         {
           id: '32',
@@ -80,7 +80,7 @@ export class MenuComponent implements OnInit {
           id: '41',
           titre: 'Fournisseurs',
           icon: 'fa fa-users',
-          url: ''
+          url: 'fournisseurs'
         },
         {
           id: '42',
