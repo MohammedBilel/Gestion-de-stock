@@ -7,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrl: './nouveau-clt-frs.component.scss'
 })
 export class NouveauCltFrsComponent {
+saveClick() {
+throw new Error('Method not implemented.');
+}
+cancelClick() {
+throw new Error('Method not implemented.');
+}
 
 }

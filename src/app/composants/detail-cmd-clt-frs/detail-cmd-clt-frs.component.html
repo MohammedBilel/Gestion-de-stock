@@ -1,0 +1,93 @@
+<div class="row mb-1 mr-0 custom-border">
+    <div class="col-md-1 border-right p-1 text-center">
+            <img src="/src/assets/product.png" width="100px" height="100px" alt="grains of wheats" />
+    </div>
+
+    <!--  Details Article -->
+    <div class="col-md-5 border-right">
+        <div class="col">
+            <div class="row">
+                <div class="col-md-1"><i class="fa fa-info-circle blue-color"></i></div>
+                <div class="col-md-11">Nom</div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"><i class="fa fa-info-circle blue-color"></i></div>
+                <div class="col-md-11">Prenom</div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"><i class="fa fa-phone blue-color"></i></div>
+                <div class="col-md-11">011 55 69 78 11</div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!--   Details Commande -->
+    <div class="col-md-3 border-right mb-1 mt-1">
+        <div class="col">
+            <div class="row">
+                <div class="col-md-1"><i class="fa fa-qrcode blue-color"></i></div>
+                <div class="col-md-11">CMD-123456789</div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"><i class="fa fa-calendar-check-o blue-color"></i></div>
+                <div class="col-md-11">12.11.2023</div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"><i class="fa fa-cart-arrow-down blue-color"></i></div>
+                <div class="col-md-11">LIVREE</div>
+            </div>
+            
+        </div>
+ </div>
+
+    <!-- buttons Action -->
+    <div class="col-md-3 mb-1 mt-1">
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <button type="button" class="btn btn-link " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                    &nbsp;Modifier
+                </button>
+            </div>
+            <div class="col-md-6 text-center">
+                <button type="button" class="btn btn-link " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                    &nbsp;Supprimer
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Correction de stock</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Quantité">
+            </div>
+            <div class="form-group">
+                <select class="form-control">
+                    <option>Correction positive</option>
+                    <option>Correction négative</option>
+
+
+                </select>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="fa fa-ban" aria-hidden="true"></i>&nbsp;Annuler</button>
+          <button type="button" class="btn btn-primary"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp;Enregistrer</button>
+        </div>
+      </div>
+    </div>
+  </div>

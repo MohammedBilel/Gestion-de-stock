@@ -10,6 +10,14 @@ import { PageMvtstkComponent } from './pages/mvtstk/page-mvtstk/page-mvtstk.comp
 import { PageClientComponent } from './pages/client/page-client/page-client.component';
 import { PageFournisseurComponent } from './pages/fournisseur/page-fournisseur/page-fournisseur.component';
 import { NouveauCltFrsComponent } from './composants/nouveau-clt-frs/nouveau-clt-frs.component';
+import { PageCmdCltFrsComponent } from './pages/page-cmd-clt-frs/page-cmd-clt-frs.component';
+import { NouvelleCmdCltFrsComponent } from './composants/nouvelle-cmd-clt-frs/nouvelle-cmd-clt-frs.component';
+import { PageCategoriesComponent } from './pages/categories/page-categories/page-categories.component';
+import { NouvelleCategoryComponent } from './pages/categories/nouvelle-category/nouvelle-category.component';
+import { PageUtilisateurComponent } from './pages/utilisateur/page-utilisateur/page-utilisateur.component';
+import { NouvelUtilisateurComponent } from './pages/utilisateur/nouvel-utilisateur/nouvel-utilisateur.component';
+import { PageProfilComponent } from './pages/profil/page-profil/page-profil.component';
+import { ChangerMotDePasseComponent } from './pages/profil/changer-mot-de-passe/changer-mot-de-passe.component';
 
 const routes: Routes = [
   {
@@ -40,11 +48,44 @@ const routes: Routes = [
         path: 'nouveauclient', component:NouveauCltFrsComponent
       },
       {
+        path: 'commandesclient', component:PageCmdCltFrsComponent,
+        data: {
+          
+        }
+      },
+      {
+        path: 'nouvellecommandesclient', component:NouvelleCmdCltFrsComponent
+      },
+      {
         path: 'fournisseurs', component:PageFournisseurComponent
       },
       {
         path: 'nouveaufournisseur', component:NouveauCltFrsComponent
-      }
+      },
+      {
+        path: 'commandesfournisseur', component:PageCmdCltFrsComponent
+      },
+      {
+        path: 'nouvellecommandesfournisseur', component:NouvelleCmdCltFrsComponent
+      },
+      {
+        path: 'categories', component:PageCategoriesComponent
+      },
+      {
+        path: 'nouvellecategorie', component:NouvelleCategoryComponent
+      },
+      {
+        path: 'utilisateurs', component:PageUtilisateurComponent
+      },
+       {
+        path: 'nouvelutilisateur', component:NouvelUtilisateurComponent
+      },
+      {
+        path: 'profil', component:PageProfilComponent
+      },
+      {
+        path: 'changermotdepasse', component:ChangerMotDePasseComponent
+      },
     ]
   }
 ];
