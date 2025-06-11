@@ -45,28 +45,43 @@ const routes: Routes = [
         path: 'clients', component:PageClientComponent
       },
       {
-        path: 'nouveauclient', component:NouveauCltFrsComponent
+        path: 'nouveauclient', component:NouveauCltFrsComponent,
+        data: {
+          origin: 'client'
+        }
       },
       {
         path: 'commandesclient', component:PageCmdCltFrsComponent,
         data: {
-          
+          origin: 'client'
         }
       },
       {
-        path: 'nouvellecommandesclient', component:NouvelleCmdCltFrsComponent
+        path: 'nouvellecommandesclient', component:NouvelleCmdCltFrsComponent,
+        data: {
+          origin: 'client'
+        }
       },
       {
         path: 'fournisseurs', component:PageFournisseurComponent
       },
       {
-        path: 'nouveaufournisseur', component:NouveauCltFrsComponent
+        path: 'nouveaufournisseur', component:NouveauCltFrsComponent,
+        data: {
+          origin: 'fournisseur'
+        }
       },
       {
-        path: 'commandesfournisseur', component:PageCmdCltFrsComponent
+        path: 'commandesfournisseur', component:PageCmdCltFrsComponent,
+        data: {
+          origin: 'fournisseur'
+        }
       },
       {
-        path: 'nouvellecommandesfournisseur', component:NouvelleCmdCltFrsComponent
+        path: 'nouvellecommandesfournisseur', component:NouvelleCmdCltFrsComponent,
+        data: {
+          origin: 'fournisseur'
+        }
       },
       {
         path: 'categories', component:PageCategoriesComponent

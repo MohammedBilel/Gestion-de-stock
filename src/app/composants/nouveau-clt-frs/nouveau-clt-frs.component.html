@@ -1,11 +1,11 @@
-<div class="col mb-3">
-    <div class="col-md-12 mb-3">
+<div class="col m-3">
+    <div class="col-md-12 mb-3 mt-3">
         <img src="/src/assets/product.png" class="rounded-circle" width="200px" height="200px">
     </div>
     <hr>
     <div class="col-md-12">
         <div class="col-md-12 mb-3">
-            <h2><i class="fa fa-info-circle blue-color"></i>&nbsp;Information du client / fournisseur</h2>
+            <h2><i class="fa fa-info-circle blue-color"></i>&nbsp;Information du {{origin}}</h2>
         </div>
         <div class="col-md-12">
             <form>
@@ -52,8 +52,8 @@
             </form>
         </div>
     </div>
-    <div class="col-md-12 text-right">
-        <button class="btn btn-danger mr-3" (click)="cancelClick()">
+    <div class="col-md-12 text-end pe-3">
+        <button class="btn btn-danger me-3" (click)="cancelClick()">
             <i class="fa fa-ban" aria-hidden="true"></i>&nbsp;Annuler
         </button>
         <button class="btn btn-primary" (click)="saveClick()">
